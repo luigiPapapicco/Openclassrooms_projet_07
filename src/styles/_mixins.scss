@@ -1,0 +1,13 @@
+@mixin flexSpaceBetween {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@mixin marginPage {
+  margin: 0 100px 0 100px;
+}
+
+@mixin radiusBox {
+  border-radius: 30px;
+}

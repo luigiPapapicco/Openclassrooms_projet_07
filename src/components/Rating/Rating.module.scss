@@ -1,0 +1,12 @@
+.rating {
+  display: flex;
+  justify-content: end;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+
+  .star {
+    width: 24px;
+    height: 24px;
+    // margin-right: 5px;
+  }
+}

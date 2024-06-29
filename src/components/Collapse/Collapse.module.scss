@@ -1,0 +1,73 @@
+@import '../../styles/variables';
+
+.collapseContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 10px;
+
+  .collapseBox {
+    width: 100%;
+    height: 52px;
+    background: $clr-primary;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-radius: 5px;
+
+    h2 {
+      color: white;
+      margin: 0;
+    }
+
+    .chevronWrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+
+      .chevronCheckbox {
+        display: none;
+      }
+
+      .chevronLabel {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .chevron {
+        width: 25px;
+        height: 25px;
+        transition: transform 0.35s linear;
+      }
+    }
+  }
+
+  .chevronOpen {
+    transform: rotate(-180deg);
+  }
+
+  .txtContent {
+    background: $clr-secondary;
+    width: 100%;
+    padding: 0 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.45s ease-in-out, opacity 0.45s ease-in-out;
+
+    p {
+      margin: 0;
+    }
+  }
+
+  .open {
+    max-height: 200px;
+    opacity: 1;
+    padding: 20px;
+  }
+}

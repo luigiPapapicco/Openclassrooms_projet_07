@@ -1,0 +1,9 @@
+@import '../../styles/mixins';
+
+.about-main {
+  @include marginPage;
+
+  & > .collapseBox {
+    margin: 40px 0 40px 0;
+  }
+}

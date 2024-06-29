@@ -1,0 +1,23 @@
+@import '/src/styles/mixins';
+
+.slideshowContainer {
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   position: relative;
+  & > .imgTst {
+    width: 1240px;
+    height: 415px;
+    @include radiusBox;
+  }
+  & > .chevronLeft {
+    position: absolute;
+    left: 150px;
+    bottom: 170px;
+  }
+  & > .chevronRight {
+    position: absolute;
+    right: 150px;
+    bottom: 170px;
+  }
+}

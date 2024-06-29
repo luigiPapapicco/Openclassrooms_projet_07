@@ -1,0 +1,9 @@
+@import '../../styles/mixins';
+
+.header {
+  @include flexSpaceBetween;
+  @include marginPage;
+  margin-top: 45px;
+  margin-bottom: 45px;
+  align-items: center;
+}

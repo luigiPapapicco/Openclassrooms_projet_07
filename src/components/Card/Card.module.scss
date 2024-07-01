@@ -1,24 +1,30 @@
 @import '../../styles/variables';
 
-.cardContainer {
-  // width: 100%;
-  // height: 100%;
-  // background: $clr-primary;
+article {
   position: relative;
-
   & > .cardImg {
-    border-radius: 10px;
-    width: 340px;
+    min-width: 300px;
+    max-width: 340px;
+    width: 100%;
     height: 340px;
+    border-radius: 10px;
+    @media (max-width: 1035px) {
+      max-width: none;
+      width: 100%;
+      min-height: 255px;
+      height: 100%;
+    }
   }
-
-  & > .titleContainer {
-    height: 40px;
-    margin: 0 20px 20px 20px;
-    color: #ffffff;
+  .cardTitle {
     position: absolute;
-    bottom: 0;
-    left: 0;
+    bottom: 7px;
+    left: 25px;
+    width: 80%;
+    height: 15%;
+    color: #ffffff;
     font-size: 18px;
+    @media (max-width: 768px) {
+      bottom: 10px;
+    }
   }
 }

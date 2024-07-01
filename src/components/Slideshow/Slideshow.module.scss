@@ -1,23 +1,57 @@
 @import '/src/styles/mixins';
 
 .slideshowContainer {
-  //   display: flex;
-  //   justify-content: center;
-  //   align-items: center;
-  //   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 415px; /* Hauteur fixe pour le conteneur */
+
+  @media (max-width: 768px) {
+    height: 255px; /* Hauteur fixe pour les petits écrans */
+  }
+
   & > .imgTst {
-    width: 1240px;
-    height: 415px;
+    position: relative;
+    max-width: 1240px;
+    width: 100%;
+    height: 100%; /* Prendre toute la hauteur du conteneur */
+    object-fit: cover; /* Ajuster l'image pour couvrir le conteneur */
     @include radiusBox;
+    @media (max-width: 768px) {
+      min-width: 335px;
+      width: 100%;
+    }
   }
-  & > .chevronLeft {
-    position: absolute;
-    left: 150px;
-    bottom: 170px;
-  }
+
+  & > .chevronLeft,
   & > .chevronRight {
     position: absolute;
-    right: 150px;
-    bottom: 170px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 40px; /* Adjust size as needed */
+    height: 40px; /* Adjust size as needed */
+  }
+
+  & > .chevronLeft {
+    left: 20px;
+  }
+
+  & > .chevronRight {
+    right: 20px;
+  }
+
+  & > .counter {
+    position: absolute;
+    bottom: 20px;
+    right: 50%;
+    transform: translateX(50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1rem;
   }
 }

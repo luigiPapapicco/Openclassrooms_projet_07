@@ -39,7 +39,7 @@ function Collapse({ title, content }) {
         </div>
       </div>
       <div className={`${styles.txtContent} ${isOpen ? styles.open : ''}`}>
-        <p>{content}</p>
+        <div>{content}</div>
       </div>
     </div>
   )

@@ -4,14 +4,7 @@
   width: 100%;
   height: 223px;
   position: relative;
-
-  &_img {
-    width: 100%;
-    height: 100%;
-    @include radiusBox;
-    box-shadow: 0px 10px 12px 0px rgba(0, 0, 0, 0.199);
-  }
-
+  margin-bottom: 40px;
   &::before {
     content: '';
     position: absolute;
@@ -23,19 +16,50 @@
     @include radiusBox;
     z-index: 1;
   }
-  &_title {
-    color: white;
+  @media (max-width: 768px) {
+    min-width: 320px;
+    height: 111px;
+    padding: 0 20px;
+    margin-bottom: 20px;
+
+    &::before {
+      width: calc(100% - 40px); // Adjust width to account for padding
+      left: 20px; // Adjust left position to account for padding
+    }
+  }
+
+  &_img {
+    width: 100%;
+    height: 100%;
+    @include radiusBox;
+    box-shadow: 0px 10px 12px 0px rgba(0, 0, 0, 0.199);
+  }
+
+  & > .boxTitle {
+    width: 100%;
+    height: 100%;
     position: absolute;
     left: 0;
     top: 0;
-    width: 100%;
-    height: 223px;
     display: flex;
-    align-items: center;
     justify-content: center;
-    font-size: 3rem;
-    z-index: 2;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
-      1px 1px 0 #000;
+    align-items: center;
+    z-index: 1;
+
+    & > .banner_title {
+      text-align: center;
+      color: white;
+      font-size: 3rem;
+      text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+        1px 1px 0 #000;
+      padding: 0 20px;
+
+      @media (max-width: 768px) {
+        text-align: left;
+        font-size: 24px;
+        text-shadow: none;
+        padding: 0 40px;
+      }
+    }
   }
 }

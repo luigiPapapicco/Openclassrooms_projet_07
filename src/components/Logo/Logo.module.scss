@@ -1,6 +1,13 @@
 .header_logo {
   height: 4.25rem;
   color: #ff6060;
+  width: 210px;
+  height: 68px;
+  @media (max-width: 768px) {
+    width: 145px;
+    height: 47px;
+    padding-left: 20px;
+  }
 }
 
 .footer_logo {

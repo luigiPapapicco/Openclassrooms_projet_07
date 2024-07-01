@@ -15,16 +15,13 @@ function Logement() {
   const logement = logementData.find((logement) => logement.id === id)
   // envisager une direction vers une page d'erreur si l'id n'est pas trouvé
   // console.log(logement.pictures[0])
-  // voir l'utilité  de use effect
+  // voir l'utilité de use effect
 
   return (
     <>
       <Header />
-      <main>
-        <Slideshow
-          srcImg={logement.pictures[0]}
-          txtAlt={`photo du logement ${logement.title}`}
-        />
+      <main className="logement-main">
+        <Slideshow images={logement.pictures} />
         <div className="informations-box">
           <div className="log">
             <h2 className="log-name">{logement.title}</h2>
@@ -49,8 +46,17 @@ function Logement() {
           </div>
         </div>
         <div className="add-info">
-          <Collapse title="Description" content="dfqdf" />
-          <Collapse title="Équipements" content="dfqsdf" />
+          <Collapse title="Description" content={logement.description} />
+          <Collapse
+            title="Équipements"
+            content={
+              <ul className="log-equipement">
+                {logement.equipments.map((equipment, index) => (
+                  <li key={index}>{equipment}</li>
+                ))}
+              </ul>
+            }
+          />
         </div>
       </main>
       <Footer />

@@ -7,6 +7,10 @@
   justify-content: end;
   align-items: center;
   gap: 35px;
+  margin-top: 40px;
+  @media (max-width: 768px) {
+    margin-top: 20px;
+  }
 
   &_text {
     margin-bottom: 35px;

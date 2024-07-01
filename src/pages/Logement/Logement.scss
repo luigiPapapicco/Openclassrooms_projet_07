@@ -1,12 +1,16 @@
 @import '/src/styles/mixins';
 @import '/src/styles/variables';
 
-main {
+.logement-main {
   @include marginPage;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 50px;
+  @media (max-width: 768px) {
+    padding: 0 20px;
+  }
 
   & > .informations-box {
     margin: 30px 0 30px 0;
@@ -14,7 +18,9 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
     & > .log {
       & > .log-name {
         font-size: 36px;
@@ -37,12 +43,14 @@ main {
       display: flex;
       flex-direction: column;
       gap: 10px;
-
+      @media (max-width: 768px) {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+      }
       & > .prop-info {
         display: flex;
         justify-content: end;
-        // & > .prop-name {
-        // }
       }
     }
   }
@@ -52,7 +60,9 @@ main {
     flex-direction: raw;
     width: 100%;
     gap: 10px; // Ajouter un espace entre les collapses
-
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
     & > .collapseContainer {
       flex: 0 0 45%;
       display: flex;

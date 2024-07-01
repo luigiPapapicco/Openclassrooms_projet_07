@@ -23,15 +23,17 @@ function Home() {
           title="Chez vous, partout et ailleurs"
           imgClassName="banner_img"
         />
-        <ul className="logements-container">
+        <div className="logements-container">
           {logements.map((logement) => (
-            <li key={logement.id}>
-              <Link to={`/Logement/${logement.id}`}>
-                <Card cover={logement.cover} title={logement.title} />
-              </Link>
-            </li>
+            <Link
+              key={logement.id}
+              to={`/Logement/${logement.id}`}
+              className="linkCard"
+            >
+              <Card cover={logement.cover} title={logement.title} />
+            </Link>
           ))}
-        </ul>
+        </div>
       </main>
       <Footer />
     </>

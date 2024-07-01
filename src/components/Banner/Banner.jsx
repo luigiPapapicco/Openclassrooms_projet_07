@@ -10,7 +10,9 @@ function Banner({
   return (
     <div className={styles.banner}>
       <img src={srcImg} alt={altImg} className={styles[imgClassName]} />
-      {title && <h1 className={styles.banner_title}>{title}</h1>}
+      <div className={styles.boxTitle}>
+        {title && <h1 className={styles.banner_title}>{title}</h1>}
+      </div>
     </div>
   )
 }

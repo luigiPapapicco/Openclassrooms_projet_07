@@ -4,6 +4,9 @@
   @include marginPage;
 
   & > .collapseBox {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
     margin: 40px 0 40px 0;
   }
 }

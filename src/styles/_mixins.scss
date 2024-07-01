@@ -5,9 +5,12 @@
 }
 
 @mixin marginPage {
-  margin: 0 100px 0 100px;
+  margin: 0 100px;
+  @media (max-width: 768px) {
+    margin: 20px 0;
+  }
 }
 
 @mixin radiusBox {
-  border-radius: 30px;
+  border-radius: 20px;
 }

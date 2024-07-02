@@ -2,7 +2,6 @@
 @import '../../styles/mixins';
 
 .errContainer {
-  @include marginPage;
   margin-top: 140px;
   margin-bottom: 140px;
   display: flex;
@@ -10,20 +9,36 @@
   justify-content: space-evenly;
   align-items: center;
   gap: 139px;
+  padding: 0 100px;
+  @media (max-width: 1024px) {
+    padding: 0 20px;
+    gap: 113px;
+  }
   .errTitle {
+    // text-align: center;
+    // width: 100%;
     font-size: 288px;
     color: $clr-primary;
+    @media (max-width: 1024px) {
+      font-size: 96px;
+    }
   }
   .errTxt {
     color: $clr-primary;
     text-align: center;
     font-size: 36px;
     font-weight: 500;
+    @media (max-width: 1024px) {
+      font-size: 18px;
+    }
   }
   .errLink {
     color: black;
     font-family: 18px;
     font-weight: 600;
     border-bottom: 1px solid black;
+    @media (max-width: 1024px) {
+      font-size: 14px;
+    }
   }
 }

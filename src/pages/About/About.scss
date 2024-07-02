@@ -1,12 +1,17 @@
 @import '../../styles/mixins';
 
 .about-main {
-  @include marginPage;
-
+  padding: 0 100px;
+  @media (max-width: 1024px) {
+    padding: 0 20px;
+  }
   & > .collapseBox {
     display: flex;
     flex-direction: column;
-    gap: 30px;
-    margin: 40px 0 40px 0;
+    gap: 15px;
+    margin: 0 110px;
+    @media (max-width: 1024px) {
+      margin: 0;
+    }
   }
 }

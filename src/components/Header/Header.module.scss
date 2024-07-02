@@ -2,11 +2,10 @@
 
 .header {
   @include flexSpaceBetween;
-  @include marginPage;
-  margin-top: 45px;
-  margin-bottom: 45px;
+
   align-items: center;
-  // @media (max-width: 768px) {
-  //   padding: 0 20px;
-  // }
+  padding: 45px 100px;
+  @media (max-width: 1024px) {
+    padding: 20px 20px;
+  }
 }

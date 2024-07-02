@@ -7,7 +7,12 @@ function NavBar({ links }) {
       <ul className={styles.navBar_ul}>
         {links.map((link, index) => (
           <li key={index} className={styles.navBar_li}>
-            <NavLink to={link.href}>{link.label}</NavLink>
+            <NavLink
+              to={link.href}
+              className={({ isActive }) => (isActive ? styles.active : '')}
+            >
+              {link.label}
+            </NavLink>
           </li>
         ))}
       </ul>

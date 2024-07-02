@@ -14,7 +14,7 @@ function Collapse({ title, content }) {
   return (
     <div className={styles.collapseContainer}>
       <div className={styles.collapseBox}>
-        <h2>{title}</h2>
+        <h2 className={styles.collapseTitle}>{title}</h2>
         <div className={styles.chevronWrapper}>
           <input
             type="checkbox"
@@ -39,7 +39,7 @@ function Collapse({ title, content }) {
         </div>
       </div>
       <div className={`${styles.txtContent} ${isOpen ? styles.open : ''}`}>
-        <div>{content}</div>
+        <div className={styles.contentParagraphe}>{content}</div>
       </div>
     </div>
   )

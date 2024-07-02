@@ -6,18 +6,18 @@
   align-items: center;
   position: relative;
   width: 100%;
-  height: 415px; /* Hauteur fixe pour le conteneur */
+  height: 415px;
 
   @media (max-width: 768px) {
-    height: 255px; /* Hauteur fixe pour les petits écrans */
+    height: 255px;
   }
 
   & > .imgTst {
     position: relative;
     max-width: 1240px;
     width: 100%;
-    height: 100%; /* Prendre toute la hauteur du conteneur */
-    object-fit: cover; /* Ajuster l'image pour couvrir le conteneur */
+    height: 100%;
+    object-fit: cover;
     @include radiusBox;
     @media (max-width: 768px) {
       min-width: 335px;
@@ -31,8 +31,10 @@
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
-    width: 40px; /* Adjust size as needed */
-    height: 40px; /* Adjust size as needed */
+    width: 45px;
+    @media (max-width: 768px) {
+      width: 15px;
+    }
   }
 
   & > .chevronLeft {
@@ -50,8 +52,11 @@
     transform: translateX(50%);
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
-    padding: 5px 10px;
+    padding: 5px 5px;
     border-radius: 5px;
-    font-size: 1rem;
+    font-size: 18px;
+    @media (max-width: 768px) {
+      font-size: 13px;
+    }
   }
 }

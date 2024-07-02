@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom'
+import { Navigate, useParams } from 'react-router-dom'
 import './Logement.scss'
 import Header from '../../components/Header/Header'
 import Footer from '../../components/Footer/Footer'
@@ -13,10 +13,9 @@ import Collapse from '../../components/Collapse/Collapse'
 function Logement() {
   const { id } = useParams()
   const logement = logementData.find((logement) => logement.id === id)
-  // envisager une direction vers une page d'erreur si l'id n'est pas trouvé
-  // console.log(logement.pictures[0])
-  // voir l'utilité de use effect
-
+  if (!logement) {
+    return <Navigate to="*" />
+  }
   return (
     <>
       <Header />

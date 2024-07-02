@@ -4,7 +4,6 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  // margin-bottom: 10px;
 
   & > .collapseBox {
     z-index: 1;
@@ -14,12 +13,18 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px;
     border-radius: 5px;
+    @media (max-width: 768px) {
+      height: 30px;
+    }
 
-    & > h2 {
+    & > .collapseTitle {
       color: white;
-      margin: 0;
+      font-size: 18px;
+      padding: 0 10px;
+      @media (max-width: 768px) {
+        font-size: 13px;
+      }
     }
 
     & > .chevronWrapper {
@@ -27,6 +32,7 @@
       align-items: center;
       justify-content: center;
       cursor: pointer;
+      padding-right: 10px;
 
       & > .chevronCheckbox {
         display: none;
@@ -39,9 +45,12 @@
       }
 
       .chevron {
-        width: 25px;
-        height: 25px;
-        transition: transform 0.35s linear;
+        width: 24px;
+        transition: transform 0.35s ease-in-out;
+        cursor: pointer;
+        @media (max-width: 768px) {
+          width: 16px;
+        }
       }
     }
   }
@@ -53,29 +62,22 @@
   & > .txtContent {
     background: $clr-secondary;
     width: 100%;
-    padding: 0px;
     font-size: 18px;
     border-radius: 5px;
     overflow: hidden;
-    opacity: 0;
-    max-height: 0;
-    transform: translateY(-110px);
-    transform-origin: center bottom;
-    transition: transform 0.45s ease-in-out, max-height 0.45s ease-in-out,
-      opacity 0.45s cubic-bezier(0.99, -0.62, 0, 2.12),
-      padding 0.45s cubic-bezier(1, 0, 0, 0.99);
+    opacity: 1;
+    max-height: 0px;
+    transition: max-height 0.45s ease-in-out, opacity 0.45s ease-in-out;
+    @media (max-width: 768px) {
+      font-size: 12px;
+    }
 
-    & > p {
-      margin: 0;
+    & > .contentParagraphe {
+      padding: 15px;
     }
   }
 
   & > .open {
     max-height: 200px;
-    opacity: 1;
-    padding: 15px;
-    transform: translateY(0);
   }
 }
-
-// max-height 0.45s ease-in-out, opacity 0.45s ease-in-out,

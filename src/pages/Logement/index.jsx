@@ -17,7 +17,7 @@ function Logement() {
     return <Navigate to="*" />
   }
   return (
-    <>
+    <div className="logement-container">
       <Header />
       <main className="logement-main">
         <Slideshow images={logement.pictures} />
@@ -59,7 +59,7 @@ function Logement() {
         </div>
       </main>
       <Footer />
-    </>
+    </div>
   )
 }
 

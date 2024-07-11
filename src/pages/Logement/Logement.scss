@@ -1,86 +1,92 @@
 @import '/src/styles/mixins';
 @import '/src/styles/variables';
 
-.logement-main {
+.logement-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0 100px;
-  @media (max-width: 1024px) {
-    padding: 0 20px;
-  }
+  min-height: 100vh;
 
-  & > .informations-box {
-    width: 100%;
+  .logement-main {
+    flex: 1;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    @media (max-width: 768px) {
-      flex-direction: column;
-    }
-    & > .log {
-      & > .log-name {
-        font-size: 36px;
-        color: $clr-primary;
-        font-weight: 500;
-        margin-top: 30px;
-        margin-bottom: 5px;
-        @media (max-width: 768px) {
-          font-size: 18px;
-          margin-top: 10px;
-        }
-      }
-      & > .log-location {
-        font-size: 18px;
-        font-weight: 500;
-        margin-bottom: 15px;
-        @media (max-width: 768px) {
-          font-size: 14px;
-          margin-bottom: 10px;
-        }
-      }
-
-      & > .log-tag {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        gap: 5px;
-      }
+    flex-direction: column;
+    align-items: center;
+    padding: 0 100px;
+    @media (max-width: 1024px) {
+      padding: 0 20px;
     }
 
-    & > .prop-box {
+    & > .informations-box {
+      width: 100%;
       display: flex;
-      flex-direction: column;
-      gap: 10px;
-      margin: 40px 0 30px 0;
+      flex-direction: row;
+      justify-content: space-between;
       @media (max-width: 768px) {
-        flex-direction: row-reverse;
-        justify-content: space-between;
-        align-items: center;
-        margin: 5px 0;
+        flex-direction: column;
       }
-      & > .prop-info {
+      & > .log {
+        & > .log-name {
+          font-size: 36px;
+          color: $clr-primary;
+          font-weight: 500;
+          margin-top: 30px;
+          margin-bottom: 5px;
+          @media (max-width: 768px) {
+            font-size: 18px;
+            margin-top: 10px;
+          }
+        }
+        & > .log-location {
+          font-size: 18px;
+          font-weight: 500;
+          margin-bottom: 15px;
+          @media (max-width: 768px) {
+            font-size: 14px;
+            margin-bottom: 10px;
+          }
+        }
+
+        & > .log-tag {
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: row;
+          gap: 5px;
+        }
+      }
+
+      & > .prop-box {
         display: flex;
-        justify-content: end;
+        flex-direction: column;
+        gap: 10px;
+        margin: 40px 0 30px 0;
+        @media (max-width: 768px) {
+          flex-direction: row-reverse;
+          justify-content: space-between;
+          align-items: center;
+          margin: 5px 0;
+        }
+        & > .prop-info {
+          display: flex;
+          justify-content: end;
+        }
       }
     }
-  }
-  & > .add-info {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: raw;
-    width: 100%;
-    gap: 10px;
-    margin-top: 20px;
-    @media (max-width: 768px) {
-      flex-direction: column;
-      gap: 20px;
-    }
-    & > .collapseContainer {
-      flex: 0 0 45%;
+    & > .add-info {
       display: flex;
-      flex-direction: column;
+      justify-content: space-between;
+      flex-direction: raw;
+      width: 100%;
+      gap: 10px;
+      margin-top: 20px;
+      @media (max-width: 768px) {
+        flex-direction: column;
+        gap: 20px;
+      }
+      & > .collapseContainer {
+        flex: 0 0 45%;
+        display: flex;
+        flex-direction: column;
+      }
     }
   }
 }

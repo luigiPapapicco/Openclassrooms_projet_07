@@ -1,17 +1,24 @@
 @import '../../styles/mixins';
 
-.about-main {
-  padding: 0 100px;
-  @media (max-width: 1024px) {
-    padding: 0 20px;
-  }
-  & > .collapseBox {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    margin: 0 110px;
+.about-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  & > .about-main {
+    flex: 1;
+    padding: 0 100px;
     @media (max-width: 1024px) {
-      margin: 0;
+      padding: 0 20px;
+    }
+    & > .collapseBox {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin: 0 110px;
+      @media (max-width: 1024px) {
+        margin: 0;
+      }
     }
   }
 }

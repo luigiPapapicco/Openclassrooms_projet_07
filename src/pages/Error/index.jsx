@@ -5,9 +5,9 @@ import './Error.scss'
 
 function Error() {
   return (
-    <div>
+    <div className="error-container">
       <Header />
-      <div className="errContainer">
+      <div className="errbox">
         <h1 className="errTitle">404</h1>
         <p className="errTxt">Oups! La page que vous demandez n'existe pas.</p>
         <NavLink to={'/'} className="errLink">

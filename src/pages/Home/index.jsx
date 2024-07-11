@@ -13,9 +13,9 @@ function Home() {
   useEffect(() => {
     setLogements(logementsData)
   }, [])
-  // mieux comprendre l"utilisation de useEffect
+
   return (
-    <>
+    <div className="home-container">
       <Header />
       <main className="home-main">
         <Banner
@@ -36,7 +36,7 @@ function Home() {
         </div>
       </main>
       <Footer />
-    </>
+    </div>
   )
 }
 

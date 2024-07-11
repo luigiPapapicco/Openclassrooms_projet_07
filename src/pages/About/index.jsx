@@ -8,7 +8,7 @@ import collapseInformation from '../../data/collapse_informations.json'
 
 function About() {
   return (
-    <>
+    <div className="about-container">
       <Header />
       <main className="about-main">
         <Banner srcImg={aboutPageImg} imgClassName="banner_img" />
@@ -19,7 +19,7 @@ function About() {
         </div>
       </main>
       <Footer />
-    </>
+    </div>
   )
 }
 

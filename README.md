@@ -14,15 +14,16 @@ et React.js côté Front-end, ce qui va être notre rôle ici.
 Créer une application web de location immobilière avec React.
 
 ## Étapes du projet:
-  -Initialiser le projet
-  -Ajouter React Router
-  -Créer le routeur et les différentes pages de l'application
-  -Créer la page d'accueil
-  -Créer la page à propos
-  -Créer la page d'erreur
-  -Créer le carrousel de la page de logement
-  -Finaliser la page de logement
-  -Gérer l'erreur sur l'id d'une propriété
+- Initialiser le projet
+- Ajouter React Router
+- Créer le routeur et les différentes pages de l'application
+- Créer la page d'accueil
+- Créer la page à propos
+- Créer la page d'erreur
+- Créer le carrousel de la page de logement
+- Finaliser la page de logement
+- Gérer l'erreur sur l'id d'une propriété
+
 
 
 

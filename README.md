@@ -1,3 +1,31 @@
+## Technologies utilisées
+
+| <img src="readme_files/html.svg" alt="logo html" width="100" height="100">  | <img src="readme_files/css.svg" alt="logo css" width="100" height="100">  | <img src="readme_files/sass.svg" alt="logo css" width="100" height="100"> | <img src="readme_files/javascript.svg" alt="logo css" width="100" height="100"> |
+|:---------------------------------------------------------------------------:|:-------------------------------------------------------------------------:|:--------------------------------------------------------------------------:|:--------------------------------------------------------------------------:|
+| HTML                                                                        | CSS                                                                       | Sass                                                                       |JavaScript                                                                 |
+
+## Contexte
+Kasa vous recrute en tant que développeur Frontend en Freelance pour développer sa nouvelle plateforme web.
+Le site de Kasa a été codé il y a maintenant plus de 10 ans en ASP.NET avec un code legacy important.
+La CTO a donc lancé une refonte total pour passer à une stack complète en JavaScript, avec Node.js côté Back-end
+et React.js côté Front-end, ce qui va être notre rôle ici.
+
+## Mission
+Créer une application web de location immobilière avec React.
+
+## Étapes du projet:
+  -Initialiser le projet
+  -Ajouter React Router
+  -Créer le routeur et les différentes pages de l'application
+  -Créer la page d'accueil
+  -Créer la page à propos
+  -Créer la page d'erreur
+  -Créer le carrousel de la page de logement
+  -Finaliser la page de logement
+  -Gérer l'erreur sur l'id d'une propriété
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

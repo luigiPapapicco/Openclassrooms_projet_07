@@ -1,8 +1,8 @@
 ## Technologies utilisées
 
-| <img src="readme_files/html.svg" alt="logo html" width="100" height="100">  | <img src="readme_files/css.svg" alt="logo css" width="100" height="100">  | <img src="readme_files/sass.svg" alt="logo css" width="100" height="100"> | <img src="readme_files/javascript.svg" alt="logo css" width="100" height="100"> |
-|:---------------------------------------------------------------------------:|:-------------------------------------------------------------------------:|:--------------------------------------------------------------------------:|:--------------------------------------------------------------------------:|
-| HTML                                                                        | CSS                                                                       | Sass                                                                       |JavaScript                                                                 |
+| <img src="readme_files/html.svg" alt="logo html" width="100" height="100">  | <img src="readme_files/css.svg" alt="logo css" width="100" height="100">  | <img src="readme_files/sass.svg" alt="logo sass" width="100" height="100"> | <img src="readme_files/javascript.svg" alt="logo javascript" width="100" height="100"> | <img src="readme_files/react.svg" alt="logo react" width="100" height="100"> |
+|:---------------------------------------------------------------------------:|:-------------------------------------------------------------------------:|:--------------------------------------------------------------------------:|:--------------------------------------------------------------------------:|:--------------------------------------------------------------------------:|
+| HTML                                                                        | CSS                                                                       | Sass                                                                       |JavaScript                                                                  |React                                                                 |
 
 ## Contexte
 Kasa vous recrute en tant que développeur Frontend en Freelance pour développer sa nouvelle plateforme web.
